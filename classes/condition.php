@@ -196,7 +196,7 @@ class condition extends \core_availability\condition {
         } else {
             // Assuming section.
             $instanceid = $info->get_section()->id;
-            $description = get_section_name($info->get_course()->id, $info->get_section()->id);
+            $description = get_section_name($info->get_course()->id, $info->get_section()->section);
             $paymentarea = 'sectionfee';
         }
 
