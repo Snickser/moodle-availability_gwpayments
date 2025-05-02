@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'availability_gwpayments';
-$plugin->release = '1.0.2';
-$plugin->version = 2024033000;
+$plugin->release = '1.0.3';
+$plugin->version = 3025050200;
 $plugin->requires = 2020110900; // Moodle 3.10+.
 $plugin->maturity = MATURITY_STABLE;

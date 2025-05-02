@@ -44,6 +44,18 @@ defined('MOODLE_INTERNAL') || die();
  */
 class condition extends \core_availability\condition {
 
+    /** @var string */
+    private $accountid;
+
+    /** @var string */
+    private $currency;
+
+    /** @var string */
+    private $cost;
+
+    /** @var string */
+    private $vat;
+
     /**
      * Constructor.
      *
