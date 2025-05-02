@@ -44,6 +44,11 @@ defined('MOODLE_INTERNAL') || die();
  */
 class condition extends \core_availability\condition {
 
+    private $accountid;
+    private $currency;
+    private $cost;
+    private $vat;
+
     /**
      * Constructor.
      *
@@ -196,7 +201,7 @@ class condition extends \core_availability\condition {
         } else {
             // Assuming section.
             $instanceid = $info->get_section()->id;
-            $description = $info->get_section()->name;
+            $description = get_section_name($info->get_course()->id, $info->get_section()->section);
             $paymentarea = 'sectionfee';
         }
 
